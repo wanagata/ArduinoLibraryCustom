@@ -1,15 +1,16 @@
-#include <$.h>
+#include "$.h"
 
-$ morse(13);
+$ $_c(13);
 
 void setup()
 {
+  Serial.begin(9600);
+  Serial.println("This program demonstrate how $ class is working.");
+  $_c.begin();
 }
 
 void loop()
 {
-  morse.dot(); morse.dot(); morse.dot();
-  morse.dash(); morse.dash(); morse.dash();
-  morse.dot(); morse.dot(); morse.dot();
+  $_c.loop();
   delay(3000);
 }

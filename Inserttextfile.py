@@ -30,6 +30,7 @@ class Inserttextfile():
         self.txt = newtxt        
     
     def writefile(self):
+        print(self.new_filename)
         file = open(self.new_filename, "w")
         file.write(self.txt)
         file.close()
